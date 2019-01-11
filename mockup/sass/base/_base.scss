@@ -1,0 +1,46 @@
+/*
+COLORS
+
+Primary: #006992
+
+Grey light: #faf9f9
+
+Grey dark:1 #999
+Grey dark 2: #333
+
+*/
+
+// VARIABLES
+:root {
+  --color-primary: #006992;
+  --color-primary-light: #0075a3;
+
+  --white: #fafaff;
+
+  --grey-light: #faf9f9;
+
+  --grey-dark-1: #999;
+  --grey-dark-2: #333;
+}
+
+// CSS NORMALIZE
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+}
+
+::selection {
+  background-color: var(--color-primary-light);
+  color: var(--white);
+}
