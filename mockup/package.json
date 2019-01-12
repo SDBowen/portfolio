@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "browser-sync --server --files css/style.css",
+    "devserver": "browser-sync --server --files \"**/*\"",
     "dev": "npm-run-all --parallel devserver watch:sass"
   },
   "author": "sdbowen",

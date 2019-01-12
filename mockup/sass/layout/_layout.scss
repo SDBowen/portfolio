@@ -4,8 +4,12 @@
 
   // TESTING
   border: solid red;
+  height: 100vh;
 }
 
 .header {
-  height: 7rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
