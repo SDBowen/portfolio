@@ -22,7 +22,8 @@ Grey dark 2: #333
   --grey-dark-1: #999;
   --grey-dark-2: #333;
 
-  --main-text: #333;
+  --main-text-color: #333;
+  --main-text-size: 2rem;
 }
 
 // CSS NORMALIZE
@@ -40,6 +41,19 @@ Grey dark 2: #333
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  background-color: var(--grey-light);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 4rem auto;
+
+  // TESTING
+  border: solid red;
+  height: 100vh;
 }
 
 ::selection {

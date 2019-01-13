@@ -1,0 +1,31 @@
+.about-box {
+  height: 100%;
+
+  display: flex;
+
+  // flex-wrap: wrap;
+  & > * {
+    flex: 0 0 50%;
+  }
+  &__description-box {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__text {
+    width: 85%;
+  }
+  &__skills-box {
+    display: flex;
+
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__skill-icon {
+    height: 6rem;
+
+    flex: 1 1 33.33%;
+  }
+}
