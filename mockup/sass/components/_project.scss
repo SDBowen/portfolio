@@ -7,6 +7,9 @@
 
   display: flex;
 
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
   &__name {
     & a {
       color: var(--grey-dark-2);
