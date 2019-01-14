@@ -178,7 +178,8 @@ hr {
     word-wrap: break-word;
     flex-basis: 20%; }
   .project-item__logo {
-    width: 30rem;
+    max-width: 30rem;
+    max-height: 20rem;
     vertical-align: bottom; }
   .project-item__links-box {
     justify-content: space-between;

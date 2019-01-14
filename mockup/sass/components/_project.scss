@@ -27,7 +27,8 @@
   }
 
   &__logo {
-    width: 30rem;
+    max-width: 30rem;
+    max-height: 20rem;
     vertical-align: bottom;
   }
 
