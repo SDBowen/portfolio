@@ -37,9 +37,7 @@ body {
 
 .container {
   max-width: 120rem;
-  margin: 4rem auto;
-  border: solid red;
-  height: 100vh; }
+  margin: 4rem auto; }
 
 ::selection {
   background-color: var(--color-primary-light);
@@ -51,6 +49,13 @@ body {
   line-height: 1.6;
   color: var(--main-text-color); }
 
+hr {
+  margin: 10rem 0 10rem 0;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
 .header__text {
   font-size: 1.6rem;
   font-weight: 700;
@@ -61,6 +66,13 @@ body {
   letter-spacing: 0.1rem; }
 
 .about-box__text {
+  font-size: var(--main-text-size);
+  letter-spacing: 0.05rem; }
+
+.heading-secondary {
+  font-size: 2rem; }
+
+.paragraph {
   font-size: var(--main-text-size);
   letter-spacing: 0.05rem; }
 
@@ -123,6 +135,51 @@ body {
     height: 6rem;
     flex: 1 1 33.33%; }
 
+.project-item {
+  justify-content: space-between;
+  align-items: center;
+  display: flex; }
+  .project-item__name a {
+    color: var(--grey-dark-2);
+    text-decoration: none; }
+  .project-item__description {
+    word-wrap: break-word;
+    flex-basis: 20%; }
+  .project-item__logo {
+    height: 10rem;
+    vertical-align: bottom; }
+  .project-item__links-box {
+    justify-content: space-between;
+    align-items: center;
+    display: flex; }
+  .project-item__link {
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    color: var(--grey-dark-2);
+    padding: 0.8rem; }
+    .project-item__link:last-child {
+      margin-left: 3rem; }
+    .project-item__link:hover {
+      background-color: #e7e6e6; }
+  .project-item__svg {
+    height: 2rem;
+    margin-right: 0.8rem; }
+  .project-item__button-text {
+    font-size: 1.4rem;
+    font-weight: 700; }
+
+.container {
+  border: rosybrown solid;
+  height: 200rem; }
+
 .section-about {
   margin-top: 10rem;
-  height: 40rem; }
+  height: 40rem;
+  border: blueviolet solid; }
+
+.section-projects {
+  border: greenyellow solid; }
