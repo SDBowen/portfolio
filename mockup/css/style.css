@@ -72,6 +72,10 @@ hr {
 .heading-secondary {
   font-size: 2rem; }
 
+.heading-date {
+  font-size: 1.5rem;
+  color: var(--grey-dark-1); }
+
 .paragraph {
   font-size: var(--main-text-size);
   letter-spacing: 0.05rem; }
@@ -134,6 +138,22 @@ hr {
   .about-box__skill-icon {
     height: 6rem;
     flex: 1 1 33.33%; }
+
+.blog-listing {
+  justify-content: space-between;
+  display: flex; }
+
+.blog-post {
+  flex-direction: column;
+  display: flex; }
+  .blog-post__description {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 98%; }
+  .blog-post__topic {
+    text-align: center; }
+  .blog-post__topic-logo {
+    height: 5rem; }
 
 .project-item {
   justify-content: space-between;
