@@ -66,11 +66,15 @@ hr {
   letter-spacing: 0.1rem; }
 
 .about-box__text {
-  font-size: var(--main-text-size);
+  font-size: 2rem;
+  letter-spacing: 0.05rem; }
+
+.heading-primary {
+  font-size: 2rem;
   letter-spacing: 0.05rem; }
 
 .heading-secondary {
-  font-size: 2rem; }
+  font-size: 1.8rem; }
 
 .heading-date {
   font-size: 1.5rem;
@@ -79,6 +83,9 @@ hr {
 .paragraph {
   font-size: var(--main-text-size);
   letter-spacing: 0.05rem; }
+
+.u-margin-bottom {
+  margin-bottom: 2rem; }
 
 .brand {
   height: 6rem;
@@ -137,7 +144,10 @@ hr {
     display: flex; }
   .about-box__skill-icon {
     height: 6rem;
+    opacity: 0.7;
     flex: 1 1 33.33%; }
+    .about-box__skill-icon--express {
+      opacity: 1; }
 
 .blog-listing {
   justify-content: space-between;
@@ -168,7 +178,7 @@ hr {
     word-wrap: break-word;
     flex-basis: 20%; }
   .project-item__logo {
-    height: 10rem;
+    width: 30rem;
     vertical-align: bottom; }
   .project-item__links-box {
     justify-content: space-between;

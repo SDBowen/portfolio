@@ -26,12 +26,16 @@ hr {
 }
 
 .about-box__text {
-  font-size: var(--main-text-size);
+  font-size: 2rem;
   letter-spacing: 0.05rem;
 }
 
-.heading-secondary {
+.heading-primary {
   font-size: 2rem;
+  letter-spacing: 0.05rem;
+}
+.heading-secondary {
+  font-size: 1.8rem;
 }
 
 .heading-date {
