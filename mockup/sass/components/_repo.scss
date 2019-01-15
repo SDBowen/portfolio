@@ -12,7 +12,10 @@
   }
   &__title {
   }
-
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
   &__language {
     margin-top: 0.3rem;
     text-align: center;

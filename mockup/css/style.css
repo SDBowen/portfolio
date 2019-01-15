@@ -157,6 +157,9 @@ hr {
   flex-direction: column;
   flex: 0 0 33.33%;
   display: flex; }
+  .repo-item__link {
+    text-decoration: none;
+    color: inherit; }
   .repo-item__language {
     margin-top: 0.3rem;
     text-align: center; }
