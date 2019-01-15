@@ -27,9 +27,14 @@
   }
 
   &__logo {
-    max-width: 30rem;
+    max-width: 20rem;
     max-height: 10rem;
     vertical-align: bottom;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &__links-box {
