@@ -149,21 +149,32 @@ hr {
     .about-box__skill-icon--express {
       opacity: 1; }
 
-.blog-listing {
+.repo-listing {
   justify-content: space-between;
   display: flex; }
 
-.blog-post {
+.repo-item {
   flex-direction: column;
+  flex: 0 0 33.33%;
   display: flex; }
-  .blog-post__description {
+  .repo-item__language {
+    margin-top: 0.3rem;
+    text-align: center; }
+  .repo-item__language-text {
+    width: 6.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    border-radius: 0.3rem; }
+    .repo-item__language-text--ruby {
+      background-color: #e2574c; }
+    .repo-item__language-text--css {
+      background-color: #8a6bb4; }
+    .repo-item__language-text--javascript {
+      background-color: #f1e05a; }
+  .repo-item__description {
     margin-top: 2rem;
     margin-bottom: 1rem;
     width: 98%; }
-  .blog-post__topic {
-    text-align: center; }
-  .blog-post__topic-logo {
-    height: 5rem; }
 
 .project-item {
   justify-content: space-between;
