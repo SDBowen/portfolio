@@ -58,7 +58,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  // Brand container
+  // About section
   body .brand {
     margin-bottom: 0rem;
   }
@@ -69,35 +69,51 @@ body {
     }
   }
 
-  // Projects listing
+  // Projects section
   body .project-item {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     &:not(:last-child) {
       margin-bottom: 8rem;
     }
 
     &__name {
-      text-align: center;
       margin-top: 0rem;
       flex: 1 0 100%;
     }
     &__description {
       margin-top: 2rem;
       flex: 0 0 50%;
-      text-align: center;
     }
     &__logo-box {
       flex: 1 0 100%;
       min-height: 10rem;
-      text-align: center;
       margin-top: 3rem;
     }
     &__links-box {
       flex: 1 0 100%;
       justify-content: center;
+    }
+  }
+
+  // Repos section
+  body .repo-listing {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body .repo-item {
+    flex: 1 0 100%;
+
+    align-items: center;
+
+    &__description {
+      text-align: center;
+      max-width: 40rem;
     }
   }
 }

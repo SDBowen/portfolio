@@ -51,25 +51,33 @@ body {
   body .project-item {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
     body .project-item:not(:last-child) {
       margin-bottom: 8rem; }
     body .project-item__name {
-      text-align: center;
       margin-top: 0rem;
       flex: 1 0 100%; }
     body .project-item__description {
       margin-top: 2rem;
-      flex: 0 0 50%;
-      text-align: center; }
+      flex: 0 0 50%; }
     body .project-item__logo-box {
       flex: 1 0 100%;
       min-height: 10rem;
-      text-align: center;
       margin-top: 3rem; }
     body .project-item__links-box {
       flex: 1 0 100%;
-      justify-content: center; } }
+      justify-content: center; }
+  body .repo-listing {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  body .repo-item {
+    flex: 1 0 100%;
+    align-items: center; }
+    body .repo-item__description {
+      text-align: center;
+      max-width: 40rem; } }
 
 body {
   font-family: "Roboto", sans-serif;
