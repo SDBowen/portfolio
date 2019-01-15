@@ -92,11 +92,10 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-
-.brand__primary {
-  display: flex;
-  align-items: center;
-  align-self: stretch; }
+  .brand__primary {
+    display: flex;
+    align-items: center;
+    align-self: stretch; }
 
 .logo {
   height: 4.25rem;
@@ -121,10 +120,14 @@ hr {
   .page-nav__icon-box {
     display: flex;
     align-items: center;
-    align-self: stretch; }
+    align-self: stretch;
+    width: 1.9rem; }
   .page-nav__icon {
     height: 1.7rem;
     width: 1.7rem; }
+    .page-nav__icon:hover {
+      height: 1.9rem;
+      width: 1.9rem; }
 
 .about-box {
   height: 100%;
