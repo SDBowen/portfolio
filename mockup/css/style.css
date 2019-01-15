@@ -43,6 +43,34 @@ body {
   background-color: var(--color-primary-light);
   color: var(--white); }
 
+@media screen and (max-width: 900px) {
+  body .brand {
+    margin-bottom: 0rem; }
+  .about-box {
+    flex-direction: column; }
+  body .project-item {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    body .project-item:not(:last-child) {
+      margin-bottom: 8rem; }
+    body .project-item__name {
+      text-align: center;
+      margin-top: 0rem;
+      flex: 1 0 100%; }
+    body .project-item__description {
+      margin-top: 2rem;
+      flex: 0 0 50%;
+      text-align: center; }
+    body .project-item__logo-box {
+      flex: 1 0 100%;
+      min-height: 10rem;
+      text-align: center;
+      margin-top: 3rem; }
+    body .project-item__links-box {
+      flex: 1 0 100%;
+      justify-content: center; } }
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -130,25 +158,26 @@ hr {
       width: 1.9rem; }
 
 .about-box {
-  height: 100%;
   justify-content: space-between;
   display: flex; }
   .about-box > * {
     flex: 0 0 50%; }
   .about-box__description-box {
-    display: flex;
+    min-height: 35rem;
     flex-direction: column;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    display: flex; }
   .about-box__text {
     width: 85%; }
   .about-box__skills-box {
+    min-height: 35rem;
     align-content: space-around;
     flex-wrap: wrap;
     display: flex; }
   .about-box__skill-icon {
     height: 6rem;
     opacity: 0.7;
-    flex: 1 1 33.33%; }
+    flex: 1 0 33.33%; }
     .about-box__skill-icon:hover {
       opacity: 1; }
 
@@ -225,6 +254,5 @@ hr {
     font-size: 1.4rem;
     font-weight: 700; }
 
-.section-about {
-  margin-top: 10rem;
-  height: 40rem; }
+.brand {
+  margin-bottom: 10rem; }
