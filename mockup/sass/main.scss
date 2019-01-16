@@ -2,10 +2,11 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "layout/navigation";
 @import "layout/header";
 
 @import "components/about-box";
-@import "components/repo";
 @import "components/project";
+@import "components/repo";
 
 @import "pages/home";

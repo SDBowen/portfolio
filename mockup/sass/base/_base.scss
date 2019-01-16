@@ -116,4 +116,16 @@ body {
       max-width: 40rem;
     }
   }
+
+  // Navigation button
+  body .nav-menu {
+    width: 100%;
+    opacity: 1;
+  }
+
+  // Full screen navigation
+  body .page-nav {
+    width: 0;
+    opacity: 0;
+  }
 }

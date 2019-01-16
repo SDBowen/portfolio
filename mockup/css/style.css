@@ -77,7 +77,13 @@ body {
     align-items: center; }
     body .repo-item__description {
       text-align: center;
-      max-width: 40rem; } }
+      max-width: 40rem; }
+  body .nav-menu {
+    width: 100%;
+    opacity: 1; }
+  body .page-nav {
+    width: 0;
+    opacity: 0; } }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -122,6 +128,96 @@ hr {
 
 .u-margin-bottom {
   margin-bottom: 2rem; }
+
+.nav-menu {
+  width: 0;
+  opacity: 0; }
+  .nav-menu__checkbox {
+    display: none; }
+  .nav-menu__button {
+    background-color: var(--grey-light);
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 3.4rem;
+    right: 0rem;
+    border-radius: 50%;
+    z-index: 1000;
+    text-align: center;
+    cursor: pointer; }
+  .nav-menu__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 3.9rem;
+    right: 0.5rem;
+    z-index: 100;
+    background-color: var(--grey-dark-2);
+    transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1); }
+  .nav-menu__navigation {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .nav-menu__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center; }
+  .nav-menu__item {
+    margin: 3rem; }
+  .nav-menu__link {
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase; }
+    .nav-menu__link:hover {
+      border-bottom: solid 0.1rem var(--white); }
+  .nav-menu__svg {
+    height: 5rem;
+    fill: var(--white); }
+  .nav-menu__checkbox:checked ~ .nav-menu__background {
+    transform: scale(80); }
+  .nav-menu__checkbox:checked ~ .nav-menu__navigation {
+    opacity: 1;
+    width: 100%; }
+  .nav-menu__icon {
+    position: relative;
+    margin-top: 3.5rem; }
+    .nav-menu__icon, .nav-menu__icon::before, .nav-menu__icon::after {
+      width: 3rem;
+      height: 2px;
+      background-color: var(--grey-dark-2);
+      display: inline-block; }
+    .nav-menu__icon::before, .nav-menu__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s; }
+    .nav-menu__icon::before {
+      top: -1rem; }
+    .nav-menu__icon::after {
+      top: 1rem; }
+  .nav-menu__button:hover .nav-menu__icon::before {
+    top: -1.2rem; }
+  .nav-menu__button:hover .nav-menu__icon::after {
+    top: 1.2rem; }
+  .nav-menu__checkbox:checked + .nav-menu__button .nav-menu__icon {
+    background-color: transparent; }
+  .nav-menu__checkbox:checked + .nav-menu__button .nav-menu__icon::before {
+    transform: rotate(135deg);
+    top: 0; }
+  .nav-menu__checkbox:checked + .nav-menu__button .nav-menu__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
 
 .brand {
   height: 6rem;
@@ -189,36 +285,6 @@ hr {
     .about-box__skill-icon:hover {
       opacity: 1; }
 
-.repo-listing {
-  justify-content: space-between;
-  display: flex; }
-
-.repo-item {
-  flex-direction: column;
-  flex: 0 0 33.33%;
-  display: flex; }
-  .repo-item__link {
-    text-decoration: none;
-    color: inherit; }
-  .repo-item__language {
-    margin-top: 0.3rem;
-    text-align: center; }
-  .repo-item__language-text {
-    width: 6.5rem;
-    letter-spacing: 0.1rem;
-    font-weight: 700;
-    border-radius: 0.3rem; }
-    .repo-item__language-text--ruby {
-      background-color: #e2574c; }
-    .repo-item__language-text--css {
-      background-color: #8a6bb4; }
-    .repo-item__language-text--javascript {
-      background-color: #f1e05a; }
-  .repo-item__description {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    width: 98%; }
-
 .project-item {
   justify-content: space-between;
   align-items: center;
@@ -261,6 +327,36 @@ hr {
   .project-item__button-text {
     font-size: 1.4rem;
     font-weight: 700; }
+
+.repo-listing {
+  justify-content: space-between;
+  display: flex; }
+
+.repo-item {
+  flex-direction: column;
+  flex: 0 0 33.33%;
+  display: flex; }
+  .repo-item__link {
+    text-decoration: none;
+    color: inherit; }
+  .repo-item__language {
+    margin-top: 0.3rem;
+    text-align: center; }
+  .repo-item__language-text {
+    width: 6.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    border-radius: 0.3rem; }
+    .repo-item__language-text--ruby {
+      background-color: #e2574c; }
+    .repo-item__language-text--css {
+      background-color: #8a6bb4; }
+    .repo-item__language-text--javascript {
+      background-color: #f1e05a; }
+  .repo-item__description {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 98%; }
 
 .brand {
   margin-bottom: 10rem; }
