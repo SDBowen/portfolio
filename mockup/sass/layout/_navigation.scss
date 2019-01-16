@@ -51,6 +51,14 @@
   &__item {
     margin: 3rem;
   }
+
+  &__social-links {
+    justify-content: space-between;
+    align-items: center;
+
+    display: flex;
+  }
+
   &__link {
     font-size: 3rem;
     font-weight: 300;
@@ -65,7 +73,8 @@
   &__svg-box {
   }
   &__svg {
-    height: 5rem;
+    height: 3rem;
+    width: 3rem;
     fill: var(--white);
   }
 

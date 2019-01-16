@@ -173,6 +173,10 @@ hr {
     text-align: center; }
   .nav-menu__item {
     margin: 3rem; }
+  .nav-menu__social-links {
+    justify-content: space-between;
+    align-items: center;
+    display: flex; }
   .nav-menu__link {
     font-size: 3rem;
     font-weight: 300;
@@ -182,7 +186,8 @@ hr {
     .nav-menu__link:hover {
       border-bottom: solid 0.1rem var(--white); }
   .nav-menu__svg {
-    height: 5rem;
+    height: 3rem;
+    width: 3rem;
     fill: var(--white); }
   .nav-menu__checkbox:checked ~ .nav-menu__background {
     transform: scale(80); }
