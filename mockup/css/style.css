@@ -83,7 +83,8 @@ body {
     opacity: 1; }
   body .page-nav {
     width: 0;
-    opacity: 0; } }
+    opacity: 0;
+    display: none; } }
 
 body {
   font-family: "Roboto", sans-serif;
