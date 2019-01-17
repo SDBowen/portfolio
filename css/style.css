@@ -269,6 +269,11 @@ hr {
       height: 1.9rem;
       width: 1.9rem; }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .about-box {
   justify-content: space-between;
   display: flex; }
