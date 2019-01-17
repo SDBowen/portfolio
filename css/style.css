@@ -87,7 +87,9 @@ body {
     display: none; }
   main + hr {
     margin: 0;
-    display: none; } }
+    display: none; }
+  .container {
+    padding: 0 2rem; } }
 
 body {
   font-family: "Roboto", sans-serif;
