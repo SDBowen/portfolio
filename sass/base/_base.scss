@@ -108,8 +108,10 @@ body {
 
   body .repo-item {
     flex: 1 0 100%;
-
     align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
 
     &__description {
       text-align: center;
@@ -139,5 +141,10 @@ body {
   // Container
   .container {
     padding: 0 2rem;
+  }
+
+  // Headings
+  .heading-secondary--underline {
+    text-decoration: underline;
   }
 }
