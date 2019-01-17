@@ -129,4 +129,10 @@ body {
     opacity: 0;
     display: none;
   }
+
+  // Footer hr
+  main + hr {
+    margin: 0;
+    display: none;
+  }
 }
