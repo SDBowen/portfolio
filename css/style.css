@@ -317,8 +317,7 @@ hr {
     color: var(--grey-dark-2);
     text-decoration: none; }
   .project-item__description {
-    word-wrap: break-word;
-    flex-basis: 20%; }
+    word-wrap: break-word; }
   .project-item__logo {
     max-width: 20rem;
     max-height: 10rem;
