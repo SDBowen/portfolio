@@ -37,6 +37,7 @@
 
     opacity: 0;
     width: 0;
+    display: none;
     transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   &__list {
@@ -86,6 +87,7 @@
   &__checkbox:checked ~ &__navigation {
     opacity: 1;
     width: 100%;
+    display: block;
   }
 
   // Menu icon
