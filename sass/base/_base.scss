@@ -132,6 +132,12 @@ body {
     display: none;
   }
 
+  // hr spacing
+
+  body hr {
+    margin: 5rem 0 5rem 0;
+  }
+
   // Footer hr
   main + hr {
     margin: 0;

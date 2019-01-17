@@ -87,6 +87,8 @@ body {
     width: 0;
     opacity: 0;
     display: none; }
+  body hr {
+    margin: 5rem 0 5rem 0; }
   main + hr {
     margin: 0;
     display: none; }
