@@ -377,10 +377,11 @@ hr {
     width: 6.5rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
-    border-radius: 0.3rem; }
+    border-radius: 0.3rem;
+    background-color: var(--grey-dark-1); }
     .repo-item__language-text--ruby {
       background-color: #e2574c; }
-    .repo-item__language-text--css {
+    .repo-item__language-text--html {
       background-color: #8a6bb4; }
     .repo-item__language-text--javascript {
       background-color: #f1e05a; }

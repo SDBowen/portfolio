@@ -25,11 +25,12 @@
     letter-spacing: 0.1rem;
     font-weight: 700;
     border-radius: 0.3rem;
+    background-color: var(--grey-dark-1);
 
     &--ruby {
       background-color: #e2574c;
     }
-    &--css {
+    &--html {
       background-color: #8a6bb4;
     }
     &--javascript {
