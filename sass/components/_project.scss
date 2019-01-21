@@ -11,6 +11,8 @@
     margin-bottom: 3rem;
   }
   &__name {
+    width: 10rem;
+
     & a {
       color: var(--grey-dark-2);
       text-decoration: none;
@@ -19,9 +21,12 @@
 
   &__description {
     word-wrap: break-word;
+    width: 45rem;
   }
 
   &__logo-box {
+    width: 20rem;
+    text-align: center;
   }
 
   &__logo {
