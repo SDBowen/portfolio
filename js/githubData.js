@@ -1,6 +1,5 @@
 const url = "https://api.github.com/users/sdbowen/repos?sort=updated";
 
-// GET repo data from GitHub API
 fetch(url)
   .then(response => {
     return response.json();
@@ -54,26 +53,25 @@ let formatDate = repoItemDate => {
   let repoDate = new Date(Date.UTC(year, month, day, hour, minute, seconds));
   let currentDate = new Date(Date.now());
 
-  let oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-  let oneHour = 60 * 60 * 1000;
+  // hours*minutes*seconds*milliseconds
+  const oneMinute = 60 * 1000;
 
-  let difference = Math.round(
-    Math.abs((repoDate.getTime() - currentDate.getTime()) / oneDay)
-  );
+  differenceInMinutes =
+    Math.round(
+      Math.abs((repoDate.getTime() - currentDate.getTime()) / oneMinute)
+    ) || 1;
 
-  if (difference > 1) {
-    return `Updated ${difference} days ago`;
-  } else if (difference === 1) {
+  if (differenceInMinutes >= 2880) {
+    return `Updated ${Math.round(differenceInMinutes / 1440)} days ago`;
+  } else if (differenceInMinutes < 2880 && differenceInMinutes >= 1440) {
     return "Updated 1 day ago";
-  }
-
-  difference = Math.round(
-    Math.abs((repoDate.getTime() - currentDate.getTime()) / oneHour)
-  );
-
-  if (difference > 1) {
-    return `Updated ${difference} hours ago`;
-  } else {
+  } else if (differenceInMinutes >= 120) {
+    return `Updated ${Math.round(differenceInMinutes / 60)} hours ago`;
+  } else if (differenceInMinutes < 120 && differenceInMinutes >= 60) {
     return "Updated 1 hour ago";
+  } else if (differenceInMinutes >= 2) {
+    return `Updated ${differenceInMinutes} minutes ago`;
+  } else {
+    return "Updated 1 minute ago";
   }
 };
