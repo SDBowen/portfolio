@@ -8,16 +8,17 @@ fetch(url)
     parseData(jsonResponse);
   });
 
-let parseData = ApiData => {
+let parseData = apiData => {
   reposDetail = [];
 
   for (let i = 0; i < 3; i++) {
     let currentRepo = {};
 
-    currentRepo.updatedDate = ApiData[i].updated_at;
-    currentRepo.name = ApiData[i].name;
-    currentRepo.description = ApiData[i].description;
-    currentRepo.language = ApiData[i].language;
+    currentRepo.updatedDate = apiData[i].updated_at;
+    currentRepo.url = apiData[i].html_url;
+    currentRepo.name = apiData[i].name;
+    currentRepo.description = apiData[i].description;
+    currentRepo.language = apiData[i].language;
 
     reposDetail.push(currentRepo);
   }
@@ -27,13 +28,14 @@ let parseData = ApiData => {
 
 let updatePageElements = data => {
   let dateElements = document.querySelectorAll(".heading-date");
-  let nameElements = document.querySelectorAll(".repo-item__link");
+  let nameUrlElements = document.querySelectorAll(".repo-item__link");
   let descElements = document.querySelectorAll(".repo-item__description p");
   let languageElements = document.querySelectorAll(".repo-item__language-text");
 
   for (let i = 0; i < 3; i++) {
     dateElements[i].innerHTML = formatDate(data[i].updatedDate);
-    nameElements[i].innerHTML = data[i].name;
+    nameUrlElements[i].innerHTML = data[i].name;
+    nameUrlElements[i].href = data[i].url;
     descElements[i].innerHTML = data[i].description;
     languageElements[i].innerHTML = data[i].language;
     languageElements[i].className += ` repo-item__language-text--${data[
