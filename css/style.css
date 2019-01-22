@@ -324,7 +324,7 @@ hr {
   .project-item:not(:last-child) {
     margin-bottom: 3rem; }
   .project-item__name {
-    width: 10rem; }
+    width: 12rem; }
     .project-item__name a {
       color: var(--grey-dark-2);
       text-decoration: none; }
@@ -332,11 +332,12 @@ hr {
     word-wrap: break-word;
     width: 45rem; }
   .project-item__logo-box {
+    height: 8rem;
     width: 20rem;
     text-align: center; }
   .project-item__logo {
     max-width: 20rem;
-    max-height: 10rem;
+    max-height: 8rem;
     vertical-align: bottom;
     opacity: 0.7; }
     .project-item__logo:hover {
